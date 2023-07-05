@@ -12,11 +12,8 @@ async function fetchData(url: string) {
 }
 
 function App() {
-  console.log(process.env.REACT_APP_API_KEY);
   const [searchCity, setSearchCity] = useState("");
-
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=${process.env.REACT_APP_API_KEY}`;
-
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
   const cityHandler = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     fetchData(url);
