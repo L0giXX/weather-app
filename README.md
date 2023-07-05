@@ -1,3 +1,3 @@
-# Weather App
+# Simple Weather App
 
 ### https://home.openweathermap.org/
